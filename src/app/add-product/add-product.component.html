@@ -1,0 +1,30 @@
+
+<br>
+<div class="container">
+  <h3 class="text-center">Ürün Ekleme Sayfası</h3>
+  <form class="align-items-sm-center" [formGroup]="formValue">
+    <div class="mb-3">
+      <label for="productName" class="form-label">Ürün Adı</label>
+      <input type="text" formControlName="productName" class="form-control" id="productName"
+             aria-describedby="nameHelp">
+    </div>
+    <div class="mb-3">
+      <label for="productFee" class="form-label">Ürün Fiyatı</label>
+      <input type="number" formControlName="productFee" class="form-control" id="productFee">
+    </div>
+    <div class="mb-3">
+      <label for="currency" class="form-label">Fiyat Birimi</label>
+      <input type="text" formControlName="currency" class="form-control" id="currency">
+    </div>
+    <div class="mb-3">
+      <label for="expireDate" class="form-label">Son Kullanma Tarihi</label>
+      <input placeholder="GG/AA/YYYY" type="text" formControlName="expireDate" class="form-control" id="expireDate">
+    </div>
+    <div class="model-footer">
+      <div class="float-end mx-2">
+        <button id="cancel" routerLink="/home" type="button" class="btn btn-secondary mx-3">İptal</button>
+        <button type="submit" (click)="postProductDetails()" class="btn btn-primary mx-3">Ekle</button>
+      </div>
+    </div>
+  </form>
+</div>
