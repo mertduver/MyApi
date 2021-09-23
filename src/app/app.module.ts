@@ -7,14 +7,12 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HomeComponent} from './home/home.component';
 import {RouterModule} from '@angular/router';
 import {AddProductComponent} from './add-product/add-product.component';
-import {PreviewComponent} from './preview/preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AddProductComponent,
-    PreviewComponent,
   ],
   imports: [
     BrowserModule,
